@@ -1,0 +1,96 @@
+
+
+.hero {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+
+.smallSizeImg {
+    object-fit: cover;
+    width: 100%;
+    height: 70vh;
+}
+
+
+.fullSizeImg {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    /* background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)); */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     width: 70%;
+   padding-top: 10rem;;
+}
+
+
+.hero-text h1{
+    font-size: 5rem;
+    letter-spacing: -4px;
+    height: 6rem;
+    color: white;
+    white-space: nowrap;
+    text-shadow: var(--secondary) 1px 0 10px;
+}
+
+.hero-text p {
+    font-size: 2rem;
+    color: var(--primary);
+    padding: 3rem;
+    font-family: 'Josefin Sans';
+    letter-spacing: -2px;
+    
+}
+
+
+
+.hero-text .show-button {
+    color: var(--fonts);
+    background-color: var(--highlights);
+    font-weight: 500;
+    border-radius: 5%;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    border: 1px solid var(--fonts);
+    padding: 0.8rem;
+    /* opacity: 70%; */
+    
+}
+
+.hero-text .show-button:hover {
+    
+    transition: 0.2s ease-in-out;
+    background-color: var(--primary);
+    /* border: none; */
+    opacity: 100%;
+}
+
+.hero-text .hide-button {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .hero-text h1 {
+        font-size: 4rem;
+        white-space: normal;
+    }
+
+    .hero-text p{
+        font-size: 1.5rem;
+        letter-spacing: -1px;
+        padding: 3rem;
+    }
+   
+    
+}
+
+
